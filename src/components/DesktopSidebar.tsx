@@ -1,6 +1,5 @@
 "use client";
 
-import { useTheme } from "next-themes";
 import { navItems } from "@/data/nav";
 
 type DesktopSidebarProps = {
@@ -8,12 +7,6 @@ type DesktopSidebarProps = {
 };
 
 export function DesktopSidebar({ positionClass = "pst-v1" }: DesktopSidebarProps = {}) {
-  const { theme, setTheme } = useTheme();
-
-  const handleToggle = () => {
-    setTheme(theme === "dark" ? "light" : "dark");
-  };
-
   const goTop = (e: React.MouseEvent) => {
     e.preventDefault();
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -21,11 +14,6 @@ export function DesktopSidebar({ positionClass = "pst-v1" }: DesktopSidebarProps
 
   return (
     <div className={`sidebar-tools ${positionClass}`}>
-      <div className="nav-top">
-        <div className={`tf-btn-icon toggle-switch-mode${theme === "dark" ? " active" : ""}`} onClick={handleToggle}>
-          <i className="icon icon-light" />
-        </div>
-      </div>
       <ul className="nav-list">
         {navItems.map((item, i) => (
             <li  key={item.href + i} className="nav-item">

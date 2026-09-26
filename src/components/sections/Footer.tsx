@@ -14,19 +14,28 @@ export function Footer() {
       <div className="br-line" />
       <div className="foot-inner">
         <div className="isak effectFade fadeUp no-div">
-          <span
-            style={{
-              fontSize: "clamp(60px, 12vw, 140px)",
-              fontWeight: 700,
-              letterSpacing: "-0.04em",
-              lineHeight: 1,
-              color: "rgba(0,0,0,0.72)",
-              fontFamily: "inherit",
-              display: "block",
-            }}
+          <svg
+            viewBox="0 0 700 120"
+            width="100%"
+            height="auto"
+            xmlns="http://www.w3.org/2000/svg"
+            style={{ display: "block" }}
+            overflow="visible"
           >
-            KHALID
-          </span>
+            <text
+              x="0"
+              y="105"
+              fontFamily="inherit"
+              fontSize="120"
+              fontWeight="700"
+              letterSpacing="-4"
+              fill="rgba(0,0,0,0.72)"
+              textLength="700"
+              lengthAdjust="spacingAndGlyphs"
+            >
+              KHALID
+            </text>
+          </svg>
         </div>
         <a href="#" className="f-logo effectFade fadeZoom">
           <div className="logo">
@@ -44,20 +53,30 @@ export function Footer() {
           All rights reserved <br />© 2026 Khalid Mohamed Zarook
         </p>
         <div className="isak effectFade fadeUp no-div">
-          <span
-            style={{
-              fontSize: "clamp(50px, 10vw, 120px)",
-              fontWeight: 700,
-              letterSpacing: "-0.04em",
-              lineHeight: 1,
-              color: "transparent",
-              WebkitTextStroke: "1.5px rgba(0,0,0,0.56)",
-              fontFamily: "inherit",
-              display: "block",
-            }}
+          <svg
+            viewBox="0 0 700 105"
+            width="100%"
+            height="auto"
+            xmlns="http://www.w3.org/2000/svg"
+            style={{ display: "block" }}
+            overflow="visible"
           >
-            ZAROOK
-          </span>
+            <text
+              x="0"
+              y="92"
+              fontFamily="inherit"
+              fontSize="105"
+              fontWeight="700"
+              letterSpacing="-4"
+              fill="transparent"
+              stroke="rgba(0,0,0,0.56)"
+              strokeWidth="1.5"
+              textLength="700"
+              lengthAdjust="spacingAndGlyphs"
+            >
+              ZAROOK
+            </text>
+          </svg>
         </div>
       </div>
     </div>

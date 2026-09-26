@@ -3,22 +3,17 @@
 import { useEffect } from "react";
 import { useTheme } from "next-themes";
 
-type BodyThemeClassOptions = {
-    defaultMode?: "dark" | "light";
-};
+export function useBodyThemeClass({ defaultMode = "dark" }: { defaultMode?: "dark" | "light" } = {}) {
+    const { setTheme } = useTheme();
 
-export function useBodyThemeClass({ defaultMode = "dark" }: BodyThemeClassOptions = {}) {
-    const { resolvedTheme, setTheme } = useTheme();
-
+    // Always force dark mode — no light/system toggle
     useEffect(() => {
-        setTheme(defaultMode);
+        setTheme("dark");
     }, []);
 
     useEffect(() => {
         const body = document.body;
-        const currentTheme = resolvedTheme || defaultMode;
-
         body.classList.remove("dark-mode", "light-mode");
-        body.classList.add(currentTheme === "dark" ? "dark-mode" : "light-mode");
-    }, [resolvedTheme, defaultMode]);
+        body.classList.add("dark-mode");
+    }, []);
 }

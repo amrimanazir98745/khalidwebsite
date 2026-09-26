@@ -33,7 +33,7 @@ export const experienceItems: TimelineItem[] = [
     role: "Creative Designer & Digital Manager — Freelance",
     description:
       "Delivered branding, logo design, and graphic solutions for restaurants, small businesses, and e-commerce brands. Designed Arabic calligraphy artwork, social media creatives, and landing pages using WordPress & Elementor. Managed social media content, food and product photography, and image retouching for digital campaigns.",
-    icon: { light: "/assets/images/khalid/logo.svg", width: 32, height: 32 },
+    icon: { light: "/assets/images/logo/logo-kz.svg", dark: "/assets/images/logo/logo-kz.svg", width: 32, height: 32 },
   },
 ];
 
@@ -44,28 +44,28 @@ export const qualificationItems: TimelineItem[] = [
     role: "Blender 3D Modeling & Motion Graphics — Udemy",
     description:
       "3D modeling and animation fundamentals — learned to create product visualisations and motion sequences for brand campaigns.",
-    icon: { light: "/assets/images/khalid/svg/Blender.svg", width: 32, height: 32 },
+    icon: { light: "/assets/images/brand/udemy.svg", dark: "/assets/images/brand/udemy.svg", width: 80, height: 30 },
   },
   {
     period: "2021",
     role: "Video Editing & Motion Graphics — Professional Training",
     description:
       "Advanced training in Premiere Pro, After Effects, and CapCut — covering video editing, kinetic typography, and social-first motion content.",
-    icon: { light: "/assets/images/khalid/svg/PremierePro.svg", width: 32, height: 32 },
+    icon: { light: "/assets/images/brand/skillshare.svg", dark: "/assets/images/brand/skillshare.svg", width: 80, height: 40 },
   },
   {
     period: "2020",
     role: "Adobe Creative Suite — Skillshare",
     description:
       "Mastered Photoshop, Illustrator, and InDesign — building a strong foundation in raster/vector graphics, print design, and brand collateral.",
-    icon: { light: "/assets/images/khalid/svg/Photoshop.svg", width: 32, height: 32 },
+    icon: { light: "/assets/images/brand/skillshare.svg", dark: "/assets/images/brand/skillshare.svg", width: 80, height: 40 },
   },
   {
     period: "2020",
     role: "Foundation in IT & English — ESOFT Metro Campus, Sri Lanka",
     description:
       "Foundation programme covering information technology fundamentals and professional English communication skills.",
-    icon: { light: "/assets/images/item/edu-3.svg", dark: "/assets/images/item/edu-3_dark.svg", width: 120, height: 32 },
+    icon: { light: "/assets/images/brand/esoft.png", dark: "/assets/images/brand/esoft.png", width: 100, height: 35 },
   },
 ];
 

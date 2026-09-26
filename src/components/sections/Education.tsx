@@ -22,12 +22,12 @@ export function Education() {
             <div className="timeline-dot" />
             <div className="timeline-content">
               <div className="icon">
-                <ImageSwitch
-                  light={item.icon.light}
-                  dark={item.icon.dark}
-                  width={item.icon.width}
-                  height={item.icon.height}
-                />
+                  <ImageSwitch
+                    light={item.icon.light}
+                    dark={item.icon.dark ?? item.icon.light}
+                    width={item.icon.width}
+                    height={item.icon.height}
+                  />
               </div>
               <p className="timeline-role fw-medium text-black-72">{item.role}</p>
               <p className="timeline-desc text-body-3 text-black-56">{item.description}</p>

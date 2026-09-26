@@ -2,7 +2,6 @@
 
 import { useEffect } from "react";
 import { BodyBackground } from "./BodyBackground";
-import { SettingColorMenu } from "./SettingColorMenu";
 import { MobileMenu } from "./MobileMenu";
 import { DesktopSidebar } from "./DesktopSidebar";
 import { HeaderClock } from "./HeaderClock";
@@ -52,10 +51,20 @@ export function HomeShell({
 }: HomeShellProps) {
     useBodyThemeClass({ defaultMode });
 
+    // Apply Forest Shadow (dark-v3) permanently on mount
     useEffect(() => {
         const body = document.body;
-        const classes = bodyClass.split(" ").filter(Boolean);
+        // Remove any previously stored color variant
+        localStorage.removeItem("isak-color-variant");
+        // Clear any conflicting body theme classes
+        body.classList.forEach((c) => {
+            if (c === "body-default" || c.startsWith("body-v") || c.startsWith("dark-v")) {
+                body.classList.remove(c);
+            }
+        });
+        body.classList.add("dark-v3");
 
+        const classes = bodyClass.split(" ").filter(Boolean);
         classes.forEach((c) => body.classList.add(c));
 
         return () => {
@@ -99,7 +108,6 @@ export function HomeShell({
                 videoSrc={videoSrc}
             />
 
-            <SettingColorMenu leftBarClass={leftBarPositionClass} />
 
             {showMobileMenu && <MobileMenu />}
 

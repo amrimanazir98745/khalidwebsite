@@ -49,7 +49,7 @@ export function IntroV2() {
         ))}
       </div>
 
-      <p className="intro-client letter-space--05 text-body-3">Selected works (2020–25©)</p>
+      <p className="intro-client letter-space--05 text-body-3">Selected works (2021–2026)</p>
 
       <BrandSlider />
     </div>

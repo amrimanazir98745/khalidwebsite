@@ -12,10 +12,10 @@ export const metadata: Metadata = {
     authors: [{ name: "Khalid Mohamed Zarook" }],
     icons: {
         icon: [
-            { url: "/assets/images/khalid/logo-kz.svg", type: "image/svg+xml" },
+            { url: "/assets/images/logo/logo-kz.svg", type: "image/svg+xml" },
         ],
         shortcut: "/favicon.svg",
-        apple: "/assets/images/khalid/logo-kz.svg",
+        apple: "/assets/images/logo/logo-kz.svg",
     },
 };
 

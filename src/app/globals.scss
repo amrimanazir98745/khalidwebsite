@@ -8,3 +8,19 @@
 @use "../../public/assets/css/odometer.min.css";
 @use "../../public/assets/css/styles.css";
 @use "../../public/assets/scss/app.scss";
+
+/* ── Custom overrides ─────────────────────────────────── */
+
+/* Client logos — always white/monochrome fill */
+.infiniteSlide-brand .image-brand img,
+.infiniteSlide-brand .image-brand .image-switch {
+  filter: brightness(0) invert(1);
+}
+
+/* Footer SVG text — dark mode colour fixes */
+.dark-mode .tf-footer .foot-inner .isak svg text {
+  fill: rgba(255, 255, 255, 0.72);
+}
+.dark-mode .tf-footer .foot-bottom .isak svg text {
+  stroke: rgba(255, 255, 255, 0.56);
+}
