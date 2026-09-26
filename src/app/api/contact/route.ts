@@ -4,7 +4,6 @@ import { NextResponse } from "next/server";
 export const dynamic = "force-dynamic";
 
 export async function POST(req: Request) {
-  const resend = new Resend(process.env.RESEND_API_KEY);
   try {
     const { name, email, message } = await req.json();
 
@@ -15,8 +14,19 @@ export async function POST(req: Request) {
       );
     }
 
+    const apiKey = process.env.RESEND_API_KEY;
+    if (!apiKey) {
+      console.error("RESEND_API_KEY is not set");
+      return NextResponse.json(
+        { error: "Email service is not configured. Please contact directly." },
+        { status: 500 }
+      );
+    }
+
+    const resend = new Resend(apiKey);
+
     const { error } = await resend.emails.send({
-      from: "Portfolio Contact <noreply@khalidz.com>",
+      from: "Portfolio Contact <onboarding@resend.dev>",
       to: ["mskhalidzarook@gmail.com"],
       replyTo: email,
       subject: `New message from ${name} — Portfolio`,

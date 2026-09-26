@@ -26,7 +26,15 @@ export function Contact() {
         body: JSON.stringify(data),
       });
 
-      const json = await res.json();
+      let json: { error?: string; success?: boolean } = {};
+      try {
+        json = await res.json();
+      } catch {
+        // Response wasn't JSON — treat as server error
+        setErrorMsg("Server error. Please try again or email directly.");
+        setStatus("error");
+        return;
+      }
 
       if (!res.ok) {
         setErrorMsg(json.error || "Something went wrong.");
