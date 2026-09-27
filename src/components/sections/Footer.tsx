@@ -13,12 +13,13 @@ export function Footer() {
       </div>
       <div className="br-line" />
 
-      {/* KHALID + ZAROOK grouped together with logo */}
+      {/* KHALID + ZAROOK big footer name */}
       <div className="foot-inner">
         <div className="foot-names">
+          {/* KHALID — solid filled */}
           <div className="isak effectFade fadeUp no-div">
             <svg
-              viewBox="0 0 700 120"
+              viewBox="0 0 700 130"
               width="100%"
               height="auto"
               xmlns="http://www.w3.org/2000/svg"
@@ -27,11 +28,11 @@ export function Footer() {
             >
               <text
                 x="0"
-                y="105"
-                fontFamily="inherit"
-                fontSize="120"
-                fontWeight="700"
-                letterSpacing="-4"
+                y="115"
+                fontFamily="'Inter', sans-serif"
+                fontSize="128"
+                fontWeight="900"
+                letterSpacing="-6"
                 fill="rgba(0,0,0,0.72)"
                 textLength="700"
                 lengthAdjust="spacingAndGlyphs"
@@ -40,9 +41,10 @@ export function Footer() {
               </text>
             </svg>
           </div>
+          {/* ZAROOK — solid filled, same weight */}
           <div className="isak effectFade fadeUp no-div">
             <svg
-              viewBox="0 0 700 105"
+              viewBox="0 0 700 115"
               width="100%"
               height="auto"
               xmlns="http://www.w3.org/2000/svg"
@@ -51,14 +53,12 @@ export function Footer() {
             >
               <text
                 x="0"
-                y="92"
-                fontFamily="inherit"
-                fontSize="105"
-                fontWeight="700"
-                letterSpacing="-4"
-                fill="transparent"
-                stroke="rgba(0,0,0,0.56)"
-                strokeWidth="1.5"
+                y="102"
+                fontFamily="'Inter', sans-serif"
+                fontSize="112"
+                fontWeight="900"
+                letterSpacing="-6"
+                fill="rgba(0,0,0,0.72)"
                 textLength="700"
                 lengthAdjust="spacingAndGlyphs"
               >
@@ -88,3 +88,4 @@ export function Footer() {
     </div>
   );
 }
+
