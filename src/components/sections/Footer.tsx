@@ -12,30 +12,60 @@ export function Footer() {
         <p className="quote-author font-3 text-black-56 h6 text-end">Steve Jobs</p>
       </div>
       <div className="br-line" />
+
+      {/* KHALID + ZAROOK grouped together with logo */}
       <div className="foot-inner">
-        <div className="isak effectFade fadeUp no-div">
-          <svg
-            viewBox="0 0 700 120"
-            width="100%"
-            height="auto"
-            xmlns="http://www.w3.org/2000/svg"
-            style={{ display: "block" }}
-            overflow="visible"
-          >
-            <text
-              x="0"
-              y="105"
-              fontFamily="inherit"
-              fontSize="120"
-              fontWeight="700"
-              letterSpacing="-4"
-              fill="rgba(0,0,0,0.72)"
-              textLength="700"
-              lengthAdjust="spacingAndGlyphs"
+        <div className="foot-names">
+          <div className="isak effectFade fadeUp no-div">
+            <svg
+              viewBox="0 0 700 120"
+              width="100%"
+              height="auto"
+              xmlns="http://www.w3.org/2000/svg"
+              style={{ display: "block" }}
+              overflow="visible"
             >
-              KHALID
-            </text>
-          </svg>
+              <text
+                x="0"
+                y="105"
+                fontFamily="inherit"
+                fontSize="120"
+                fontWeight="700"
+                letterSpacing="-4"
+                fill="rgba(0,0,0,0.72)"
+                textLength="700"
+                lengthAdjust="spacingAndGlyphs"
+              >
+                KHALID
+              </text>
+            </svg>
+          </div>
+          <div className="isak effectFade fadeUp no-div">
+            <svg
+              viewBox="0 0 700 105"
+              width="100%"
+              height="auto"
+              xmlns="http://www.w3.org/2000/svg"
+              style={{ display: "block" }}
+              overflow="visible"
+            >
+              <text
+                x="0"
+                y="92"
+                fontFamily="inherit"
+                fontSize="105"
+                fontWeight="700"
+                letterSpacing="-4"
+                fill="transparent"
+                stroke="rgba(0,0,0,0.56)"
+                strokeWidth="1.5"
+                textLength="700"
+                lengthAdjust="spacingAndGlyphs"
+              >
+                ZAROOK
+              </text>
+            </svg>
+          </div>
         </div>
         <a href="#" className="f-logo effectFade fadeZoom">
           <div className="logo">
@@ -48,36 +78,12 @@ export function Footer() {
           </div>
         </a>
       </div>
+
+      {/* Copyright always at the very bottom */}
       <div className="foot-bottom">
         <p className="text-nocopy text-black-56 effectFade fadeUp no-div">
           All rights reserved <br />© 2026 Khalid Mohamed Zarook
         </p>
-        <div className="isak effectFade fadeUp no-div">
-          <svg
-            viewBox="0 0 700 105"
-            width="100%"
-            height="auto"
-            xmlns="http://www.w3.org/2000/svg"
-            style={{ display: "block" }}
-            overflow="visible"
-          >
-            <text
-              x="0"
-              y="92"
-              fontFamily="inherit"
-              fontSize="105"
-              fontWeight="700"
-              letterSpacing="-4"
-              fill="transparent"
-              stroke="rgba(0,0,0,0.56)"
-              strokeWidth="1.5"
-              textLength="700"
-              lengthAdjust="spacingAndGlyphs"
-            >
-              ZAROOK
-            </text>
-          </svg>
-        </div>
       </div>
     </div>
   );

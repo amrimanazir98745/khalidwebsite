@@ -34,16 +34,7 @@ export function Work() {
                                     </div>
                                     <div className="content">
                                         <div className="content-top">
-                                            <div className="w-logo">
-                                                {/* eslint-disable-next-line @next/next/no-img-element */}
-                                                <img
-                                                    loading="lazy"
-                                                    width={40}
-                                                    height={40}
-                                                    src={w.logo}
-                                                    alt="logo"
-                                                />
-                                            </div>
+
                                             <h4 className="w-title letter-space--2 text-white-72">
                                                 {w.title}
                                             </h4>

@@ -5,8 +5,8 @@ export function Qualifications() {
   return (
     <div id="qualifications" className="section-education-experience flat-spacing">
       <div className="sect-tag text-caption fw-medium effectFade fadeUp no-div">
-        <i className="icon icon-edu" />
-        Training & Qualifications
+        <i className="icon icon-graduation" />
+        Training &amp; Qualifications
       </div>
       <h4 className="s-title letter-space--2 text-black-72 split-text effect-blur-fade">
         How I sharpened <br className="d-none d-sm-block" />

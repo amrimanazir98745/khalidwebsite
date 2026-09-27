@@ -351,6 +351,80 @@
         }
     }
 
+    .action-whatsapp {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 18px;
+        border-radius: 50px;
+        font-size: 13px;
+        font-weight: 500;
+        text-decoration: none;
+        color: #fff;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+        /* Liquid glass base */
+        background: linear-gradient(
+            135deg,
+            rgba(37, 211, 102, 0.25) 0%,
+            rgba(37, 211, 102, 0.10) 50%,
+            rgba(18, 140, 126, 0.20) 100%
+        );
+        backdrop-filter: blur(16px) saturate(180%);
+        -webkit-backdrop-filter: blur(16px) saturate(180%);
+        border: 1px solid rgba(255, 255, 255, 0.22);
+        box-shadow:
+            0 4px 24px rgba(37, 211, 102, 0.18),
+            inset 0 1px 0 rgba(255, 255, 255, 0.30),
+            inset 0 -1px 0 rgba(0, 0, 0, 0.10);
+
+        /* Glass sheen overlay */
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            border-radius: inherit;
+            background: linear-gradient(
+                160deg,
+                rgba(255, 255, 255, 0.28) 0%,
+                rgba(255, 255, 255, 0.04) 55%,
+                transparent 100%
+            );
+            pointer-events: none;
+        }
+
+        svg {
+            flex-shrink: 0;
+            filter: drop-shadow(0 0 4px rgba(37, 211, 102, 0.6));
+            transition: filter 0.25s ease;
+        }
+
+        span {
+            color: rgba(255, 255, 255, 0.90);
+            letter-spacing: 0.02em;
+        }
+
+        &:hover {
+            transform: translateY(-2px) scale(1.03);
+            box-shadow:
+                0 8px 32px rgba(37, 211, 102, 0.32),
+                inset 0 1px 0 rgba(255, 255, 255, 0.40),
+                inset 0 -1px 0 rgba(0, 0, 0, 0.08);
+            color: #fff;
+
+            svg {
+                filter: drop-shadow(0 0 7px rgba(37, 211, 102, 0.9));
+            }
+        }
+
+        &:active {
+            transform: translateY(0) scale(0.98);
+        }
+    }
+
     .action-group {
         display: flex;
         align-items: center;

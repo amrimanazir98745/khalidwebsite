@@ -15,25 +15,22 @@
     .foot-inner {
         display: flex;
         justify-content: space-between;
+        align-items: flex-end;
         margin-bottom: 8px;
         gap: 12px;
+    }
+
+    .foot-names {
+        flex: 1;
+        min-width: 0;
 
         .isak {
-            max-width: 354px;
             width: 100%;
         }
     }
 
     .foot-bottom {
-        display: flex;
-        justify-content: space-between;
-        align-items: end;
-        gap: 12px;
-
-        .isak {
-            max-width: 428px;
-            width: 100%;
-        }
+        margin-top: 16px;
     }
 
     .f-logo {
@@ -47,7 +44,7 @@
     }
 
     .text-nocopy {
-        white-space: nowrap
+        white-space: nowrap;
     }
 
     .isak {
@@ -68,6 +65,30 @@
         .br-line {
             margin-top: 40px;
             margin-bottom: 40px;
+        }
+    }
+
+    @include res(sm) {
+        .foot-inner {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .foot-names {
+            width: 100%;
+        }
+
+        .f-logo {
+            align-self: flex-end;
+            margin-top: -36px;
+        }
+
+        .foot-bottom {
+            margin-top: 12px;
+        }
+
+        .text-nocopy {
+            white-space: normal;
         }
     }
 }
